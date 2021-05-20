@@ -27,3 +27,7 @@ textarea#box {
     display: block;
     padding-bottom: 100px;
 }
+
+button#n {
+    font-weight: bolder; 
+}

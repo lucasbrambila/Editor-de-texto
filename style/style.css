@@ -1,33 +1,67 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.toolbar {
+    padding-top: 100px;
+}
+.tool-list {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	overflow: hidden;
+    border: 1px solid white;
+    width: 700px;
+}
+.tool {}
+.tool--btn {
+	display: block;
+	border: none;
+	padding: .5rem;
+	font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#output {
+	height: 400px; 
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin: auto;
+	padding: 1rem;
+    border: 1px solid white;
+    width: 700px;
+    height: 300px;
+
+
+}
+/*
 * {
+}
+*/
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
     background-color: rgb(25, 25, 25);
     color: white;
 }
 
-h1#title {
-    border-bottom: 2px solid white;
-    text-align: center;
-    padding-top: 3px;
-    font-family: Arial, sans-serif;
-}
-
-div#content {
-    padding-top: 100px;
-    width: 500px;
-    height: 250px;
+h1 {
     margin: auto;
+    text-align: center;
+    border-bottom: 2px solid white;
+
+}
+
+.btntheme {
     display: block;
-}
-
-p#hbox {
-    text-align: left;
-}
-
-textarea#box {
-    width: 500px;
-    display: block;
-    padding-bottom: 100px;
-}
-
-button#n {
-    font-weight: bolder; 
+    margin: auto;
+    text-align: center;
 }

@@ -1,12 +1,18 @@
-var box = document.getElementById('box')
-var c = 0
+let output = document.getElementById('output');
+let buttons = document.getElementsByClassName('tool--btn');
+for (let btn of buttons) {
+	btn.addEventListener('click', () => {
+		let cmd = btn.dataset['command'];
+		if(cmd === 'createlink') {
+			let url = prompt("Enter the link here: ", "http:\/\/");
+			document.execCommand(cmd, false, url);
+		} else {
+			document.execCommand(cmd, false, null);
+		}
+	})
+}
 
-function n(){
-    if(c == 0){
-        document.getElementById('box').style.fontWeight = "700"
-        c++
-    } else {
-        document.getElementById('box').style.fontWeight = "400"
-        c--
-    }
+function dark(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 }

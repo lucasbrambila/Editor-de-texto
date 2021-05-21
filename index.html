@@ -4,17 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editor de Texto</title>
+    <title>Edit de Texto</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <h1 id="title">Editor de Texto</h1>
-    <div id="content">
-        <p id="hbox">
-            <input type="button" value="N" onclick="n()">
-        </p>
-        <textarea name="box" id="box" cols="30" rows="10"></textarea>
+    <header>
+        <h1>Editor de Texto</h1>
+        <button type="button" onclick="dark()" id="btntheme"><i class="fas fa-adjust"></i>
+        </button>
+        
+    </header>
+    <div class="toolbar">
+        <ul class="tool-list">
+            <li class="tool">
+                <button
+                    type="button" 
+                    data-command='justifyLeft'
+                    class="tool--btn">
+                    <i class=' fas fa-align-left'></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button 
+                    type="button" 
+                    data-command='justifyCenter' 
+                    class="tool--btn">
+                    <i class=' fas fa-align-center'></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button 
+                    type="button" 
+                    data-command="bold" 
+                    class="tool--btn">
+                    <i class=' fas fa-bold'></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button 
+                    type="button" 
+                    data-command="italic"
+                    class="tool--btn">
+                    <i class=' fas fa-italic'></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button 
+                    type="button" 
+                    data-command="underline"
+                    class="tool--btn">
+                    <i class=' fas fa-underline'></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button 
+                    type="button" 
+                    data-command="insertOrderedList"
+                    class="tool--btn">
+                    <i class=' fas fa-list-ol'></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button 
+                    type="button" 
+                    data-command="insertUnorderedList"
+                    class="tool--btn">
+                    <i class=' fas fa-list-ul'></i>
+                </button>
+            </li>
+            <li class="tool">
+                <button 
+                    type="button" 
+                    data-command="createlink" 
+                    class="tool--btn">
+                    <i class=' fas fa-link'></i>
+                </button>
+            </li>
+        </ul>
     </div>
+    
+    <div id="output" contenteditable="true"></div>
+
+    <script src="https://kit.fontawesome.com/9eb050e4c5.js" crossorigin="anonymous"></script>
     <script src="js/text.js"></script>
+
 </body>
 </html>

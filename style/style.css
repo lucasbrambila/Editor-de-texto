@@ -17,7 +17,7 @@
     border: 1px solid white;
     width: 700px;
 }
-.tool {}
+
 .tool--btn {
 	display: block;
 	border: none;
@@ -38,10 +38,6 @@
 
 
 }
-/*
-* {
-}
-*/
 
 body {
     background-color: white;
